@@ -1,3 +1,8 @@
+mod tokenizer;
+
 fn main() {
-    println!("Hello, world!");
+    let input = "
+    ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+    ";
+    println!("{:?}", tokenizer::tokenize(input));
 }
